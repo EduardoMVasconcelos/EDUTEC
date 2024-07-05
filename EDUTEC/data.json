@@ -1,0 +1,109 @@
+{
+    "quiz": [
+        {
+            "tittle": "Quizz",
+            "questions": [
+                {
+                    "question": "Qual é a principal função do esqueleto humano?",
+                    "options": [
+                        "Armazenamento de vitaminas essenciais",
+                        "Proteção dos vasos Sanguíneos",
+                        "Produção de energia para o corpo",
+                        "Regulação da temperatura corporal"
+                    ],
+                    "answer": "Armazenamento de vitaminas essenciais"
+                },
+                {
+                   "question": "Quais são os 3 tipos de músculos?",
+                    "options": [
+                        "O músculos estriado esquelético, músculos não estriado cardíaco e músculos não estriado esquelético",
+                        "O estriado esquelético, estriado cardíaco e não estriado",
+                        "O músculos não estriado muscular, musculo estriado esquelético e músculo não estriatico cardíaco",
+                        "Músculos não estriado esquelético, músculos estriatico muscular, músculos estriatico cardíaco"
+                    ],
+                    "answer": "O estriado esquelético, estriado cardíaco e não estriado" 
+                },
+                {
+                    "question": "Qual o principal órgão do sistema nervoso?",
+                    "options": [
+                        "Cérebro",
+                        "Medula Espinhal",
+                        "Nervos Periféricos",
+                        "Gânglios Nervosos"
+                    ],
+                    "answer": "Cérebro"
+                },
+                {
+                    "question": "Qual componente do sistema cardiovascular é responsável por transportar sangue rico em oxigênio do coração para os tecidos do corpo?",
+                    "options": [
+                        "Átrios",
+                        "Ventrículos",
+                        "Capilares",
+                        "Artérias"
+                    ],
+                    "answer": "Artérias"
+                },
+                {
+                    "question": "Qual órgão do sistema respiratório é responsável pela troca gasosa entre o ar inspirado e o sangue?",
+                    "options": [
+                        "Laringe",
+                        "Traqueia",
+                        "Pulmões",
+                        "Faringe"
+                    ],
+                    "answer": "Pulmões"
+                },
+                {
+                    "question": "Qual estrutura do sistema respiratório conecta as cavidades nasal e oral à laringe, servindo como passagem comum para o ar e alimentos?",
+                    "options": [
+                        "Traqueia",
+                        "Laringe",
+                        "Brônquios",
+                        "Faringe"
+                    ],
+                    "answer": "Faringe"
+                },
+                {
+                    "question": "Qual é a principal função do intestino grosso no sistema digestório?",
+                    "options": [
+                        "Digestão das proteínas",
+                        "Absorção de água",
+                        "Produção de suco gástrico",
+                        "Digestão de carboidratos"
+                    ],
+                    "answer": "Absorção de água"
+                },
+                {
+                    "question": "Qual órgão é mencionado como uma glândula tanto endócrina quanto exócrina, sendo responsável pela produção de insulina e outros hormônios que regulam o nível de glicose no sangue, além de produzir líquidos digestivos para auxiliar na digestão dos alimentos?",
+                    "options": [
+                        "Hipotálamo",
+                        "Hipófise",
+                        "Glândula tireoide",
+                        "Pâncreas"
+                    ],
+                    "answer": "Pâncreas"
+                },
+                {
+                   "question": "Qual dos seguintes ossos é considerado curto?",
+                    "options": [
+                        "Fêmur",
+                        "Úmero",
+                        "Costelas",
+                        "Vértebras"
+                    ],
+                    "answer": "Vértebras" 
+                },
+                {
+                    "question": "Quais são as válvulas cardíacas responsáveis por controlar o fluxo sanguíneo unidirecional entre os átrios e ventrículos no coração?",
+                    "options": [
+                        "Tricúspide e Pulmonar",
+                        "Mitral e Aórtica",
+                        "Aórtica e Tricúspide",
+                        "Pulmonar e Mitral"
+                    ],
+                    "answer": "Aórtica e Tricúspide" 
+                }
+            ]
+        }
+    ]
+}
