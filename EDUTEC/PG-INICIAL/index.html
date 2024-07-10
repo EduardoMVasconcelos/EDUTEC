@@ -10,17 +10,14 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="../PG-INICIAL/script.js" defer></script>
     <!-- Swiper CSS -->
-     <link rel="stylesheet" href="../swiper-bundle.min.css">
-     <!-- Swiper JS -->
-      <script src="../swiper-bundle.min.js" defer></script>
+     <link rel="stylesheet" href="../CSS/swiper-bundle.min.css">
     <title>BIOTEC</title>
 </head>
 
 <body>
     <header>
-        <img src="../images/Logo do site.png" alt="Logo do site" id="site-logo">
+        <a href="./index.html"><img src="../images/Logo do site.png" alt="Logo do site" id="site-logo"></a>
         <div class="navs">
 
             <div class="conteudo-dropdown">
@@ -105,34 +102,58 @@
         <div class="slide-container swiper">
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <h2 id="h2-card">Sistema Esquelético</h2>
+                    <div class="card">
+                        <div class="card-content swiper-slide">
+                            <h2 id="h2-card">Sistema Esquelético</h2>
 
-                        <p id="p-card">   Os ossos do sistema esquelético possuem diferentes tipos, como longos (fêmur), curtos (ossos do carpo), planos (escápula) e irregulares (vértebras). As articulações sinoviais permitem movimentos, enquanto as cartilagens articular e epifisária contribuem para o amortecimento.</p>
+                            <p id="p-card">   Os ossos do sistema esquelético possuem diferentes tipos, como longos (fêmur), curtos (ossos do carpo), planos (escápula) e irregulares (vértebras). As articulações sinoviais permitem movimentos, enquanto as cartilagens articular e epifisária contribuem para o amortecimento.</p>     
+                        </div>  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content swiper-slide">
+                            <h2 id="h2-card">Sistema Esquelético</h2>
+
+                            <p id="p-card">   Os ossos do sistema esquelético possuem diferentes tipos, como longos (fêmur), curtos (ossos do carpo), planos (escápula) e irregulares (vértebras). As articulações sinoviais permitem movimentos, enquanto as cartilagens articular e epifisária contribuem para o amortecimento.</p>     
+                        </div>  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content swiper-slide">
+                            <h2 id="h2-card">Sistema Esquelético</h2>
+
+                            <p id="p-card">   Os ossos do sistema esquelético possuem diferentes tipos, como longos (fêmur), curtos (ossos do carpo), planos (escápula) e irregulares (vértebras). As articulações sinoviais permitem movimentos, enquanto as cartilagens articular e epifisária contribuem para o amortecimento.</p>     
+                        </div>  
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
 
-    <section> <!--PG Feedback-->
-        <div>
-            <h2>Feedback</h2>
+    <section id="pg-feedback"> <!--PG Feedback-->
+        <div class="feedback-text">
+            <h2 id="feedback-h2">Feedback</h2>
 
-            <p>Gostaríamos de expressar nossa sincera gratidão pela visita ao nosso site! É um prazer tê-lo(a) conosco,
+            <p id="feedback-p">Gostaríamos de expressar nossa sincera gratidão pela visita ao nosso site! É um prazer tê-lo(a) conosco,
                 e esperamos que sua experiência tenha sido enriquecedora. Estamos constantemente empenhados em aprimorar
                 nossos serviços e garantir que sua visita seja o mais proveitosa possível. Valorizamos a sua opinião e
                 gostaríamos de convidá-lo(a) a compartilhar seu feedback conosco. Sua perspectiva é fundamental para
                 continuarmos oferecendo conteúdos e serviços de qualidade.</p>
 
             <form action="">
-                <input type="text" placeholder="Enviar seu feedback">
+                <input type="text" placeholder="Enviar seu feedback" id="feedback-input">
             </form>
+
+            <div class="icons">
+                <a href=""><img src="../images/Icon Instagram.png" alt="Icone do Instagram" class="icons" id="icon-instagram"></a>
+                <a href=""><img src="../images/Icon Facebook.png" alt="Icone do Facebook" class="icons" id="icon-facebook"></a>
+            </div>
         </div>
     </section>
+    <script src="../JS/swiper-bundle.min.js"></script>
+    <script src="../PG-INICIAL/script.js"></script>
 </body>
 
 </html>
