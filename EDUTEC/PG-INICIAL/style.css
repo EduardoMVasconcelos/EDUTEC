@@ -217,7 +217,7 @@ h1 {
 }
 
 .feedback-text {
-    margin: 13.06rem 6.06rem 37.2rem 63.35rem;
+    margin: 13.06rem 12.06rem 37.2rem 63.35rem;
     display: flex;
     flex-direction: column;
 }
@@ -259,7 +259,7 @@ h1 {
     gap: 28.25rem;
     background-image: url(../images/Botão\ -\ enviar.png);
     background-repeat: no-repeat;
-    background-position: 47.5rem;
+    background-position: 41.7rem;
     background-size: 1.5rem 1.4375rem;
     margin-bottom: 24.44rem;
 }
