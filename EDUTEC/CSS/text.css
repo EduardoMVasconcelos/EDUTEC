@@ -1,0 +1,33 @@
+:root {
+    --branco: #FFF;
+    --tittle-color: #CA8383;
+    --p-color: #FFFDFD;
+    --background-color: #131311;
+}
+
+.h2-text {
+    color: var(--tittle-color);
+    font-family: Roboto;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.p-text {
+    color: var(--p-color);
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ol-text {
+    color: var(--p-color);
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

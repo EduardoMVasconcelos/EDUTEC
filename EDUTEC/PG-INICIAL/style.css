@@ -62,12 +62,6 @@ h1 {
 .h2-pg-dois {
     width: 38.125rem;
     height: 4.8125rem;
-    color: var(--tittle-color);
-    font-family: Roboto;
-    font-size: 2.8125rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
 }
 
 #p-pg {
@@ -76,12 +70,6 @@ h1 {
 }
 
 .p-pg-dois {
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
     width: 42.75rem;
     height: 8.75rem;
     margin-bottom: 3.38rem;
@@ -113,6 +101,11 @@ h1 {
     gap: 1rem;
 }
 
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 .slide-content {
     margin: 0 40px;
     display: flex;
@@ -142,6 +135,7 @@ h1 {
     font-weight: 500;
     line-height: normal;
 }
+
 
 /* Pagina Feedback */
 #pg-feedback { /* Concertar em desktop maior */

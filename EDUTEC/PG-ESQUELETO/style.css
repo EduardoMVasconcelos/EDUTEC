@@ -4,3 +4,11 @@
     box-sizing: border-box;
     background-color: var(--cinza);
 }
+
+:root {
+    --background-color: #131311;
+}
+
+body {
+    background-color: var(--background-color);
+}
