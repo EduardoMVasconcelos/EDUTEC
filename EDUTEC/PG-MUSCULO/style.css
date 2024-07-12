@@ -19,3 +19,21 @@
 body {
     background-color: var(--background-color);
 }
+
+.pg-musculo {
+    padding-inline: 5.75rem 6.94rem;
+}
+
+h1 {
+    margin-bottom: 1.11rem;
+}
+
+#img-musculo-um {
+    width: 22.875rem;
+    height: 34.5945rem;
+    margin-left: 0.62rem;
+}
+
+.box {
+    display: flex;
+}
