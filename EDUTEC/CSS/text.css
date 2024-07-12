@@ -5,6 +5,15 @@
     --background-color: #131311;
 }
 
+.h1-text {
+    color: var(--tittle-color);
+    font-family: Roboto;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .h2-text {
     color: var(--tittle-color);
     font-family: Roboto;
@@ -12,6 +21,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 1.81rem;
 }
 
 .p-text {
@@ -21,6 +31,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 1.81rem;
 }
 
 .ol-text {
@@ -30,4 +41,28 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 1.81rem;
+}
+
+.ul-text {
+    color: var(--p-color);
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.81rem;
+}
+
+.iframe-div {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 54.8125rem;
+    height: 30.625rem;
 }
