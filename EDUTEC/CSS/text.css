@@ -5,6 +5,14 @@
     --background-color: #131311;
 }
 
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
 .h1-text {
     color: var(--tittle-color);
     font-family: Roboto;
@@ -65,4 +73,11 @@
 iframe {
     width: 54.8125rem;
     height: 30.625rem;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 4rem 2.5rem;
 }

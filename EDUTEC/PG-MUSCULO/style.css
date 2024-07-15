@@ -16,10 +16,6 @@
     --placeholder-color: #848080;
 }
 
-body {
-    background-color: var(--background-color);
-}
-
 .pg-musculo {
     padding-inline: 5.75rem 6.94rem;
 }
@@ -42,13 +38,6 @@ h1 {
 
 ol {
     margin-left: 1.3rem;
-}
-
-.img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block: 4rem 2.5rem;
 }
 
 ul {
