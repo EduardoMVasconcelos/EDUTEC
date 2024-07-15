@@ -3,64 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/header.css">
     <title>BIOTEC</title>
 </head>
 <body>
     <header>
-        <div>
+        <a href="../PG-INICIAL/index.html"><img src="../images/Logo do site.png" alt="Logo do site" id="site-logo"></a>
+        <div class="navs">
+
+            <div class="conteudo-dropdown">
+
+                <p id="content-p">Conteúdo</p>
+                <div class="content">
+                    <nav>
+                        <ul>
+                            <li><a href="../HTML/ESQUELETO.html">Sistema Esquelético</a></li>
+                            <li><a href="../HTML/MUSCULO.html">Sistema Muscular</a></li>
+                            <li><a href="../HTML/NERVOSO.html">Sistema Nervoso</a></li>
+                            <li><a href="../HTML/CARDIOVASCULAR.html">Sistema Cardiovascular</a></li>
+                            <li><a href="../HTML/RESPIRATORIO.html">Sistema Respiratório</a></li>
+                            <li><a href="../HTML/DIGESTIVO.html">Sistema Digestivo</a></li>
+                            <li><a href="../HTML/ENDOCRINO.html">Sistema Endócrino</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="quiz-nav">
+                <nav>
+                    <a href="#">Quiz</a>
+                </nav>
+            </div>
+
+            <div class="sobre-nos-nav">
+                <nav>
+                    <a href="#">Sobre nós</a>
+                </nav>
+            </div>
             <nav>
-                <ul class="sistemas">
-                    <li><a href="../PG-ESQUELETO/index.html">Sistema Esquelético</a></li>
-                    <li><a href="../PG-CARDIOVASCULAR/index.html">Sistema Cardiovascular</a></li>
-                    <li><a href="../PG-DIGESTIVO/index.html">Sistema Digestivo</a></li>
-                    <li><a href="../PG-ENDOCRINO/index.html">Sistema Endocrino</a></li>
-                    <li><a href="../PG-MUSCULO/index.html">Sistema Muscular</a></li>
-                    <li><a href="../PG-NERVOSO/index.html">Sistema Nervoso</a></li>
-                    <li><a href="../PG-RESPIRATORIO/index.html">Sistema Respiratorio</a></li>
-                </ul>
-            <a href="../PG-INICIAL/index.html">HOME</a>
-            <a href="../PG-QUIZ/./inicio-Q/index.html">QUIZ</a>
-        </nav>
-    </div>
+                <a href="#" id="login-a">Login</a>
+            </nav>
+
+        </div>
     </header>
 
-    <section>
-        <h1>Desenvolvedores</h1>
+    <section class="pg">
+        <div class="left">
+            <div class="icon">
+                <img src="../images/Perfil - Icon.png" alt="icone de pessoa">
+                <div class="text">
+                    <h2>Alexandre Henrique</h2>
+                    <a href="">@alexandrhenriqu</a>  
+                </div>
+                
+            </div>
 
-        <div>
-            <h2>Alexandre Henrique</h2>
-            <img src="" alt="foto-integrante">
-            <img src="" alt="logo-insta">
-            <p>@alexandrhenriqu</p>
+            <div class="icon">
+                <img src="../images/Perfil - Icon.png" alt="icone de pessoa">
+                <div class="text">
+                    <h2>Eduardo Rosa</h2>
+                    <a href="">@edurosa__</a>
+                </div>
+            </div>
+
+            <div class="icon">
+                <img src="../images/Perfil - Icon.png" alt="icone de pessoa">
+                <div class="text">
+                    <h2>Pedro Ramos</h2>
+                    <a href="">@httpsramos404</a>
+                </div>
+                
+            </div>
         </div>
 
-        <div>
-            <h2>Eduardo Mariano</h2>
-            <img src="" alt="foto-integrante">
-            <img src="" alt="logo-insta">
-            <p>@eduardo_mariano_</p>
-        </div>
+        <div class="right">
+            <div class="icon">
+                <img src="../images/Perfil - Icon.png" alt="icone de pessoa">
+                <div class="text">
+                    <h2>Eduardo Mariano</h2>
+                    <a href="">@eduardo_mariano_</a>   
+                </div>
+                
+            </div>
 
-        <div>
-            <h2>Eduardo Rosa</h2>
-            <img src="" alt="foto-integrante">
-            <img src="" alt="logo-insta">
-            <p>@edurosa_</p>
-        </div>
-
-        <div>
-            <h2>Kayque Job</h2>
-            <img src="" alt="foto-integrante">
-            <img src="" alt="logo-insta">
-            <p>@kayque job_</p>
-        </div>
-
-        <div>
-            <h2>Pedro Ramos</h2>
-            <img src="" alt="foto-integrante">
-            <img src="" alt="logo-insta">
-            <p>@httpsramos404</p>
+            <div class="icon">
+                <img src="../images/Perfil - Icon.png" alt="icone de pessoa">
+                <div class="text">
+                    <h2>Kayque Job</h2>
+                    <a href="">@kayque.job</a>
+                </div>
+                
+            </div>
         </div>
     </section>
 </body>
