@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #FFF;
+    --header-bg-color: #45040C;
+    --login-color: #776342;
+    --border-button-color: #E5E3E3;
+    --tittle-color: #CA8383;
+    --tittle-alternate-color: #FFFDFD;
+    --card-bg-color: #4F1619;
+    --background-color: #131311;
+    --placeholder-color: #848080;
+}
+
+.pg {
+    padding-inline: 4.62rem 6.94rem;
+}
+
+.box {
+    display: flex;
+    gap: 3.06rem;
+    margin-block: 3.62rem 3.88rem;
+}
+
+.box-dois {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-box {
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+ol {
+    margin-left: 1.3rem;
+}
+
+ul {
+    margin-left: 1.2rem;
+}
