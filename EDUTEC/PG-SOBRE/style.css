@@ -12,34 +12,49 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    height: 95vh;
+    height: 90vh;
 }
 
 .pg {
-    padding-inline: 5rem 4rem;
-    padding-block: 6.75rem 8.31rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10.38rem;
-    height: 95vh;
+    height: 89vh;
 }
 
-.icon {
-    width: 34,875rem;
+.box {
     display: flex;
-    margin-bottom: 4.4rem;
-    gap: 0.4rem;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 10.37rem;
+    width: 100%;
+}
+
+.second-row {
+    display: flex;
+    gap: 14rem;
+}
+
+.row > div {
+    display: flex;
 }
 
 img {
-    width: 9.5rem;
-    height: 11rem;
+    margin-bottom: 4.4rem;
 }
 
-h2 {
+.text {
+    margin-left: 0.4rem;
+    margin-top: 0.2rem;
+}
+
+.text > a {
+    color: var(--text-color);
     font-family: Roboto;
-    font-size: 2.8125rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
