@@ -40,14 +40,14 @@ h1 {
 
 /* Pagina 2 */
 #pg-dois {
-    height: 100vh;
+    min-height: 100vh;
     padding: 9rem 7.5rem 7.31rem 8.44rem;
     background-color: var(--background-color);
 }
 
 .section-pg-dois {
-    height: 47.375rem;
-    width: 74,035rem;
+    min-height: 47.375rem;
+    width: 74.035rem;
     display: flex;
     flex-direction: row;
     gap: 1.94rem;
@@ -80,11 +80,32 @@ h1 {
     background-image: url(../images/Imagem\ -\ pulmão.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
+    gap: 11rem;
+}
+
+#pg-tres .pg-title {
+    color: #FFFDFD;
+    font-family: Roboto;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.slider-container {
+    display: flex;
+    overflow: auto;
+    width: calc(100% - 15rem);
+    gap: 5rem;
+    left: 8rem;
+    position: relative;
+    padding-right: 2rem;
 }
 
 .card .card-content {
@@ -111,11 +132,12 @@ h1 {
     display: flex;
 }
 
-.swiper{
+.swiper {
     width: 1500px;
 }
+
 #h2-card {
-    width: 28.5625rem;  
+    width: 28.5625rem;
     height: 4.8125rem;
     color: var(--tittle-color);
     font-family: Roboto;
@@ -123,7 +145,7 @@ h1 {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    }
+}
 
 #p-card {
     width: 29.3125rem;
@@ -138,13 +160,14 @@ h1 {
 
 
 /* Pagina Feedback */
-#pg-feedback { /* Concertar em desktop maior */
+#pg-feedback {
+    /* Concertar em desktop maior */
     border: solid;
     height: 100vh;
     background-image: url(../images/4cf92b5cbc5173ba519be36c48ec4129.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    backdrop-filter:initial;
+    backdrop-filter: initial;
 }
 
 .feedback-text {
@@ -201,6 +224,13 @@ button {
     border: none;
     background: white;
     height: 1.875rem;
+}
+
+button>img {
+    width: 1.7rem;
+    height: 1.4375rem;
+    background: none;
+    border: none;
 }
 
 #feedback-input {

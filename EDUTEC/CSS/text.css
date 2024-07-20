@@ -9,6 +9,12 @@ body {
     background-color: var(--background-color);
 }
 
+.pg#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
 h1 {
     margin-top: 2rem;
 }
@@ -27,6 +33,28 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-bottom: 3.13rem;
+}
+
+#button-img {
+    background: none;
+    border: none;
+}
+
+#img-popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    box-shadow: 0 5px 30px rgba(0,0,0 0.30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#img-popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .h2-text {
