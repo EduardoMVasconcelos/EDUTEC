@@ -48,11 +48,12 @@ button {
     border-radius: 4.375rem;
 }
 
-button > a {
+#button-jogar {
     color: #FFF;
     font-family: Roboto;
     font-size: 3.125rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    cursor: pointer ;
 }

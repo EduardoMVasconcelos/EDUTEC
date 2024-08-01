@@ -81,6 +81,16 @@
     margin-bottom: 1rem;
 }
 
+.button-pergunta-certo {
+    background: var(--carrosel-background-certo);
+    opacity: 0.8;
+}
+
+.button-pergunta-errado {
+    background: var(--carrosel-background-errado);
+    opacity: 0.8;
+}
+
 .carrosel {
     display: flex;
     gap: 1rem;
