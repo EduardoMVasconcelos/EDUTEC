@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 89vh;
+    height: 88vh;
 }
 
 .box {
@@ -42,7 +42,7 @@ body {
     display: flex;
 }
 
-img {
+.img {
     margin-bottom: 4.4rem;
 }
 
