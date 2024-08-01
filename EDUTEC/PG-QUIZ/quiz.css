@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pg {
+    border: 1px solid red;
+    min-height: calc(100vh - 7.1875rem);
+    background-image: url(../images/Quiz-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #776342;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+p {
+    color: #F5F5F5;
+    font-family: Roboto;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+button {
+    min-width: 14.375rem;
+    min-height: 6.3125rem;
+    background: #4F1619;
+    padding: 1.4rem 1.13rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    border-radius: 4.375rem;
+}
+
+button > a {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
