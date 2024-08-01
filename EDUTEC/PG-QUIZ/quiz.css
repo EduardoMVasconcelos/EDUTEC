@@ -5,7 +5,6 @@
 }
 
 .pg {
-    border: 1px solid red;
     min-height: calc(100vh - 7.1875rem);
     background-image: url(../images/Quiz-bg.png);
     background-repeat: no-repeat;
@@ -27,7 +26,7 @@ h1 {
     line-height: normal;
 }
 
-p {
+#p {
     color: #F5F5F5;
     font-family: Roboto;
     font-size: 3.125rem;

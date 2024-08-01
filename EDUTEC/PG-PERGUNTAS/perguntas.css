@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-background: #4F1619;
+    --pergunta-background: #776342;
+    --alternativa-background: #C0C0C1;
+    --carrosel-background: #D9D9D9;
+    --carrosel-background-certo: #3FAC57;
+    --carrosel-background-errado: #C72424;
+}
+
+.pg {
+    height: calc(100vh - 7.1875rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    background: var(--card-background);
+    min-width: 52.5rem;
+    min-height: 38.75rem;
+    border-radius: 2.5rem;
+    padding: 2.75rem;
+    margin-bottom: 5.5rem;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 2.19rem;
+    margin-bottom: 0.8rem;
+}
+
+.p-first-row {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.pergunta {
+    min-width: 47.125rem;
+    min-height: 9.375rem;
+    background: var(--pergunta-background);
+    border-radius: 1.25rem;
+    padding: 1rem;
+    margin-bottom: 1.6rem;
+}
+
+.alternativas {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 0.6rem;
+}
+
+.button-alternativa {
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 0.9375rem;
+    border: none;
+    background: var(--pergunta-background);
+}
+
+.button-pergunta {
+    width: 40.3125rem;
+    height: 3.125rem;
+    border-radius: 0.9375rem;
+    border: 1px solid #000;
+    background: var(--alternativa-background);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.carrosel {
+    display: flex;
+    gap: 1rem;
+}
+
+.carrosel-span {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: var(--carrosel-background);
+    border-radius: 50%;
+}
+
+.carrosel-span-certo {
+    background: var(--carrosel-background-certo);
+}
+
+.carrosel-span-errado {
+    background: var(--carrosel-background-errado);
+}
