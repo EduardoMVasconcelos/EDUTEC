@@ -15,6 +15,7 @@
 
 .pg {
     height: calc(100vh - 7.1875rem);
+    background-color: #C0C0C1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +76,7 @@
     width: 40.3125rem;
     height: 3.125rem;
     border-radius: 0.9375rem;
-    border: 1px solid #000;
+    border: none;
     background: var(--alternativa-background);
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -89,6 +90,15 @@
 .button-pergunta-errado {
     background: var(--carrosel-background-errado);
     opacity: 0.8;
+}
+
+.p-button {
+    color: black;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .carrosel {

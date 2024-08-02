@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-background: #4F1619;
+    --button-background: #776342;
+    --background-color: #C0C0C1;
+}
+
+.pg {
+    height: calc(100vh - 7.1875rem);
+    background: #C0C0C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 52.5rem;
+    min-height: 38.75rem;
+    background: var(--card-background);
+    border-radius: 2.5rem;
+    padding: 2.25rem 2.625rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.9rem;
+}
+
+.text > h1 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.text > p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#trofeu-img {
+    min-width: 12.5rem;
+    min-height: 11.3125rem;
+    margin-bottom: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    width: 9.75rem;
+    height: 3.125rem;
+    background: var(--button-background);
+    border: none;
+    border-radius: 0.9375rem;
+    text-align: center;
+    cursor: pointer;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0.4rem;
+}
