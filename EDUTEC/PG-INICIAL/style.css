@@ -16,254 +16,266 @@
     --placeholder-color: #848080;
 }
 
-/* Pagina 1 */
-#pg-um {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../images/background-image-home.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100vh - 7.1875rem);
-    top: 7.1875rem;
-}
-
-h1 {
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-/* Pagina 2 */
-#pg-dois {
-    min-height: 100vh;
-    padding: 9rem 7.5rem 7.31rem 8.44rem;
-    background-color: var(--background-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-pg-dois {
-    min-height: 47.375rem;
-    width: 74.035rem;
-    display: flex;
-    flex-direction: row;
-    gap: 1.94rem;
-    justify-content: center;
-}
-
-#img-pg-dois {
-    width: 29.375rem;
-    height: 100%;
-}
-
-.h2-pg-dois {
-    width: 38.125rem;
-    height: 4.8125rem;
-}
-
-#p-pg {
-    width: 42.75rem;
-    height: 7rem;
-}
-
-.p-pg-dois {
-    width: 42.75rem;
-    height: 8.75rem;
-    margin-bottom: 3.38rem;
-}
-
-/* Pagina 3 */
-#pg-tres {
-    background-image: url(../images/Imagem\ -\ pulmão.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
-    gap: 11rem;
-}
-
-#pg-tres .pg-title {
-    color: #FFFDFD;
-    font-family: Roboto;
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.slider-container {
-    display: flex;
-    overflow: auto;
-    width: calc(100% - 15rem);
-    gap: 5rem;
-    left: 8rem;
-    position: relative;
-    padding-right: 2rem;
-}
-
-.card .card-content {
-    display: flex;
-    width: 34.625rem;
-    height: 23.25rem;
-    border-radius: 2.5rem;
-    background: #4F1619;
-    position: relative;
-    z-index: 100;
-    padding: 2.3125rem 2.625rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.card-wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
-.slide-content {
-    margin: 0 40px;
-    display: flex;
-}
-
-.swiper {
-    width: 1500px;
-}
-
-#h2-card {
-    width: 28.5625rem;
-    height: 4.8125rem;
-    color: var(--tittle-color);
-    font-family: Roboto;
-    font-size: 3.125rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-#p-card {
-    width: 29.3125rem;
-    color: var(--branco);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-
-/* Pagina Feedback */
-#pg-feedback {
-    /* Concertar em desktop maior */
-    border: solid;
-    height: 100vh;
-    background-image: url(../images/4cf92b5cbc5173ba519be36c48ec4129.jpeg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    backdrop-filter: initial;
-}
-
-.feedback-text {
-    margin: 13.06rem 12.06rem 37.2rem 63.35rem;
-    display: flex;
-    flex-direction: column;
-}
-
-#feedback-h2 {
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    align-self: flex-end;
-    margin-bottom: 1.56rem;
-}
-
-#feedback-p {
-    color: #FFF;
-    text-align: right;
-    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 2.7rem;
-}
-
-form {
-    width: 100%;
-    margin-bottom: 24.44rem;
-    display: flex;
-    flex-direction: row;
-    border-radius: 5rem;
-}
-
-form:focus-within {
-    outline: 1px solid;
-}
-
-input {
-    flex-grow: 2;
-    border: none;
-}
-
-input:focus {
-    outline: none;
-}
-
-button {
-    border: none;
-    background: white;
-    height: 1.875rem;
-}
-
-button>img {
-    width: 1.7rem;
-    height: 1.4375rem;
-    background: none;
-    border: none;
-}
-
-#feedback-input {
-    height: 1.875rem;
-    padding: 0.1875rem 0.9375rem;
-    border: none;
-    outline: none;
-}
-
-#feedback-input::placeholder {
-    color: var(--placeholder-color);
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.icons {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
-}
-
-#icon-instagram {
-    width: 1.8125rem;
-    height: 1.8125rem;
-}
-
-#icon-facebook {
-    width: 1.8125rem;
-    height: 1.8125rem;
+@media screen and (min-width: 1440px) {
+    #pg-um {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../images/background-image-home.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: calc(100vh - 7.1875rem);
+        top: 7.1875rem;
+    }
+    
+    h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    /* Pagina 2 */
+    #pg-dois {
+        min-height: 100vh;
+        padding: 9rem 7.5rem 7.31rem 8.44rem;
+        background-color: var(--background-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section-pg-dois {
+        min-height: 47.375rem;
+        width: 74.035rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1.94rem;
+        justify-content: center;
+    }
+    
+    #img-pg-dois {
+        width: 29.375rem;
+        height: 100%;
+    }
+    
+    .h2-pg-dois {
+        width: 38.125rem;
+        height: 4.8125rem;
+    }
+    
+    #p-pg {
+        width: 42.75rem;
+        height: 7rem;
+    }
+    
+    .p-pg-dois {
+        width: 42.75rem;
+        height: 8.75rem;
+        margin-bottom: 3.38rem;
+    }
+    
+    /* Pagina 3 */
+    #pg-tres {
+        background-image: url(../images/Imagem\ -\ pulmão.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        gap: 11rem;
+    }
+    
+    #pg-tres .pg-title {
+        color: #FFFDFD;
+        font-family: Roboto;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .slider-container {
+        display: flex;
+        overflow: auto;
+        width: calc(100% - 15rem);
+        gap: 5rem;
+        left: 8rem;
+        position: relative;
+        padding-right: 2rem;
+    }
+    
+    .card .card-content {
+        display: flex;
+        width: 34.625rem;
+        height: 23.25rem;
+        border-radius: 2.5rem;
+        background: #4F1619;
+        position: relative;
+        z-index: 100;
+        padding: 2.3125rem 2.625rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .card-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .slide-content {
+        margin: 0 40px;
+        display: flex;
+    }
+    
+    .swiper {
+        width: 1500px;
+    }
+    
+    #h2-card {
+        width: 28.5625rem;
+        height: 4.8125rem;
+        color: var(--tittle-color);
+        font-family: Roboto;
+        font-size: 3.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    #p-card {
+        width: 29.3125rem;
+        color: var(--branco);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    
+    /* Pagina Feedback */
+    #pg-feedback {
+        border: solid; 
+        height: 100vh;
+        background-image: url(../images/4cf92b5cbc5173ba519be36c48ec4129.jpeg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        backdrop-filter: initial;
+        padding-right: 6.06rem;
+    }
+    
+    .feedback-text {
+        margin: 13.06rem 12.06rem 37.2rem 40.12rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #feedback-h2 {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        min-width: 43.8125rem;
+        text-align: end;
+        margin-bottom: 1.56rem;
+    }
+    
+    #feedback-p {
+        color: #FFF;
+        text-align: right;
+        text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 2.7rem;
+        min-height: 10rem;
+        min-width: 43.8125rem;
+        margin-right: 7rem;
+    }
+    
+    form {
+        min-width: 43.8125rem;
+        margin-bottom: 42.45rem;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        border-radius: 5rem;
+    }
+    
+    input {
+        flex-grow: 2;
+        border: none;
+        width: 100%;
+        font-size: 1.3rem;
+        border-radius: 3rem;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    
+    button {
+        border-radius: 6px;
+        border: none;
+        background: white;
+        top: 2px;
+        height: 90%;
+        aspect-ratio: 1;
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+    }
+    
+    button>img {
+        width: 1.7rem;
+        background: none;
+        border: none;
+    }
+    
+    #feedback-input {
+        min-height: 1.875rem;
+        /* padding: 0.1875rem 0.9375rem; */
+        padding: 0.1875rem 3.5rem 0.1875rem 0.9375rem;
+        border: none;
+        outline: none;
+    }
+    
+    #feedback-input::placeholder {
+        color: var(--placeholder-color);
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .icons-div {
+        min-width: 43.8125rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+    }
+    
+    #icon-instagram {
+        width: 1.8125rem;
+        height: 1.8125rem;
+    }
+    
+    #icon-facebook {
+        width: 1.8125rem;
+        height: 1.8125rem;
+    }
 }

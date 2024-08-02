@@ -5,114 +5,116 @@
     --background-color: #131311;
 }
 
-body {
-    background-color: var(--background-color);
-}
-
-.pg#blur.active {
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-}
-
-h1 {
-    margin-top: 2rem;
-}
-
-.h1-text {
-    color: var(--tittle-color);
-    font-family: Roboto;
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.img-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3.13rem;
-}
-
-#button-img {
-    background: none;
-    border: none;
-}
-
-#img-popup {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    box-shadow: 0 5px 30px rgba(0,0,0 0.30);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-#img-popup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.3s;
-}
-
-.h2-text {
-    color: var(--tittle-color);
-    font-family: Roboto;
-    font-size: 2.8125rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 1.81rem;
-}
-
-.p-text {
-    color: var(--p-color);
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 1.81rem;
-}
-
-.ol-text {
-    color: var(--p-color);
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 1.81rem;
-}
-
-.ul-text {
-    color: var(--p-color);
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 1.81rem;
-}
-
-.iframe-div {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-iframe {
-    width: 54.8125rem;
-    height: 30.625rem;
-}
-
-.img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block: 4rem 2.5rem;
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: var(--background-color);
+    }
+    
+    .pg#blur.active {
+        filter: blur(20px);
+        pointer-events: none;
+        user-select: none;
+    }
+    
+    h1 {
+        margin-top: 2rem;
+    }
+    
+    .h1-text {
+        color: var(--tittle-color);
+        font-family: Roboto;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .img-h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.13rem;
+    }
+    
+    #button-img {
+        background: none;
+        border: none;
+    }
+    
+    #img-popup {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        box-shadow: 0 5px 30px rgba(0,0,0 0.30);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    
+    #img-popup.active {
+        top: 50%;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.3s;
+    }
+    
+    .h2-text {
+        color: var(--tittle-color);
+        font-family: Roboto;
+        font-size: 2.8125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 1.81rem;
+    }
+    
+    .p-text {
+        color: var(--p-color);
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 1.81rem;
+    }
+    
+    .ol-text {
+        color: var(--p-color);
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 1.81rem;
+    }
+    
+    .ul-text {
+        color: var(--p-color);
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 1.81rem;
+    }
+    
+    .iframe-div {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    iframe {
+        width: 54.8125rem;
+        height: 30.625rem;
+    }
+    
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 4rem 2.5rem;
+    }
 }
