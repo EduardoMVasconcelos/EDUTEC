@@ -1,7 +1,6 @@
 :root {
     --branco: #FFF;
     --header-bg-color: #45040C;
-    --login-color: #776342;
     --border-button-color: #E5E3E3;
     --tittle-color: #CA8383;
     --tittle-alternate-color: #FFFDFD;
@@ -88,15 +87,6 @@
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;
-    }
-    
-    #login-a {
-        color: #776342;
-        font-family: Roboto;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 600;
         line-height: normal;
     }
 }

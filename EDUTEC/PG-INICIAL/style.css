@@ -21,6 +21,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background: linear-gradient(180deg, #E052D2 0%, rgba(224, 82, 210, 0.75) 58.5%, rgba(224, 82, 210, 0.37) 73.5%, rgba(224, 82, 210, 0.12) 87%, rgba(224, 82, 210, 0.00) 97.5%);
         background-image: url(../images/background-image-home.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -166,8 +167,8 @@
     #pg-feedback {
         border: solid; 
         height: 100vh;
-        background-image: url(../images/4cf92b5cbc5173ba519be36c48ec4129.jpeg);
-        background-size: 100% 100%;
+        background-image: url(../images/file\ \(2\).jpg);
+        background-size: cover;
         background-repeat: no-repeat;
         backdrop-filter: initial;
         padding-right: 6.06rem;
@@ -247,7 +248,6 @@
     
     #feedback-input {
         min-height: 1.875rem;
-        /* padding: 0.1875rem 0.9375rem; */
         padding: 0.1875rem 3.5rem 0.1875rem 0.9375rem;
         border: none;
         outline: none;
