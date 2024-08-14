@@ -21,7 +21,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(180deg, #E052D2 0%, rgba(224, 82, 210, 0.75) 58.5%, rgba(224, 82, 210, 0.37) 73.5%, rgba(224, 82, 210, 0.12) 87%, rgba(224, 82, 210, 0.00) 97.5%);
         background-image: url(../images/background-image-home.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -38,7 +37,30 @@
         font-weight: 500;
         line-height: normal;
     }
+
+    .button-voltar {
+        display: none;
+    }
     
+    .button-voltar-ativo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 73.5rem;
+        margin-right: 1rem;
+        margin-bottom: 5.75rem;
+        width: 6.25rem;
+        height: 6.25rem;
+        background: none;
+        border-radius: 1.625rem;
+        border: 3px solid #E5E3E3;
+    }
+
+    .button-voltar > img {
+        width: 4.375rem;
+        height: 4.375rem;
+    }
+
     /* Pagina 2 */
     #pg-dois {
         min-height: 100vh;
@@ -110,6 +132,7 @@
         left: 8rem;
         position: relative;
         padding-right: 2rem;
+        padding-bottom: 6.94rem;
     }
     
     .card .card-content {
@@ -167,7 +190,7 @@
     #pg-feedback {
         border: solid; 
         height: 100vh;
-        background-image: url(../images/file\ \(2\).jpg);
+        background-image: url(../images/Bg-Feedback.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         backdrop-filter: initial;
@@ -260,22 +283,5 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-    }
-    
-    .icons-div {
-        min-width: 43.8125rem;
-        display: flex;
-        gap: 1rem;
-        justify-content: flex-end;
-    }
-    
-    #icon-instagram {
-        width: 1.8125rem;
-        height: 1.8125rem;
-    }
-    
-    #icon-facebook {
-        width: 1.8125rem;
-        height: 1.8125rem;
     }
 }
