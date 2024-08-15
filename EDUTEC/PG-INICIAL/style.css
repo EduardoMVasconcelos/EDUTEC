@@ -16,12 +16,6 @@
     --placeholder-color: #848080;
 }
 
-@media screen and (min-width: 1920px) {
-    #pg-feedback {
-        color: red;
-    }
-}
-
 @media screen and (min-width: 1440px) {
     #pg-um {
         display: flex;
@@ -92,7 +86,7 @@
     }
     
     .h2-pg-dois {
-        width: 38.125rem;
+        min-width: 38.125rem;
         height: 4.8125rem;
     }
     
