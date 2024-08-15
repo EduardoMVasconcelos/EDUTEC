@@ -18,7 +18,7 @@
     --questao-d: rgba(129, 125, 125, 0.50);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .pg {
         height: calc(100vh - 7.1875rem);
         background-color: #C0C0C1;
