@@ -7,5 +7,5 @@ document.querySelector("#reiniciar").onclick = () => {
 }
 
 document.querySelector("#inicio").onclick = () => {
-    location.href = "../PG-INICIAL/index.html"
+    location.href = "../index.html"
 }

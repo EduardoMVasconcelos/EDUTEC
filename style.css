@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #FFF;
+    --header-bg-color: #45040C;
+    --login-color: #776342;
+    --border-button-color: #E5E3E3;
+    --tittle-color: #CA8383;
+    --tittle-alternate-color: #FFFDFD;
+    --card-bg-color: #4F1619;
+    --background-color: #131311;
+    --placeholder-color: #848080;
+}
+
+body::-webkit-scrollbar-track {
+    width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+    #pg-um {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../images/background-image-home.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: calc(100vh - 7.1875rem);
+        top: 7.1875rem;
+    }
+    
+    h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .button-voltar {
+        display: none;
+    }
+    
+    .button-voltar-ativo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 73.5rem;
+        margin-right: 1rem;
+        margin-bottom: 5.75rem;
+        width: 6.25rem;
+        height: 6.25rem;
+        background: none;
+        border-radius: 1.625rem;
+        border: 3px solid #E5E3E3;
+    }
+
+    .button-voltar > img {
+        width: 4.375rem;
+        height: 4.375rem;
+    }
+
+    /* Pagina 2 */
+    #pg-dois {
+        min-height: 100vh;
+        padding: 9rem 7.5rem 7.31rem 8.44rem;
+        background-color: var(--background-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section-pg-dois {
+        min-height: 47.375rem;
+        width: 74.035rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1.94rem;
+        justify-content: center;
+    }
+    
+    #img-pg-dois {
+        width: 31.375rem;
+        height: 93%;
+    }
+
+    .text-pg-dois {
+        width: 31.75rem;
+        height: 58rem;
+    }
+    
+    .h2-pg-dois {
+        min-width: 100%;
+        height: 4.8125rem;
+        margin-bottom: 3.38rem;
+    }
+
+    #text-h2 {
+        margin-top: 5.38rem;
+    }
+    
+    #p-pg {
+        width: 96%;
+        height: 7rem;
+    }
+    
+    .p-pg-dois {
+        width: 96%;
+        height: 8.75rem;
+        margin-bottom: 3.38rem;
+    }
+    
+    /* Pagina 3 */
+    #pg-tres {
+        background-image: url(../images/Imagem\ -\ pulmão.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        gap: 11rem;
+    }
+    
+    #pg-tres .pg-title {
+        color: #FFFDFD;
+        font-family: Roboto;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .slider-container {
+        display: flex;
+        overflow: auto;
+        width: calc(100% - 15rem);
+        gap: 5rem;
+        left: 8rem;
+        position: relative;
+        padding-right: 3rem;
+        padding-bottom: 6.94rem;
+    }
+    
+    .card .card-content {
+        display: flex;
+        width: 34.625rem;
+        height: 23.25rem;
+        border-radius: 2.5rem;
+        background: #4F1619;
+        position: relative;
+        z-index: 100;
+        padding: 2.3125rem 2.625rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .card-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .slide-content {
+        margin: 0 40px;
+        display: flex;
+    }
+    
+    .swiper {
+        width: 1500px;
+    }
+    
+    .h2-card {
+        max-width: 28.5625rem;
+        max-height: 4.8125rem;
+        color: var(--tittle-color);
+        font-family: Roboto;
+        font-size: 3.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        align-self: center;
+    }
+
+    #h2-cdv {
+        font-size: 2.6rem;
+    }
+    
+    #p-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: var(--branco);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    
+    /* Pagina Feedback */
+    #pg-feedback {
+        height: 100vh;
+        background-image: url(../images/Bg-Feedback.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        backdrop-filter: initial;
+        padding-right: 6.06rem;
+    }
+    
+    .feedback-text {
+        width: 100vw;
+        height: 100vh;
+        padding: 13.06rem 6.06rem 29rem 40.56rem;
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+    }
+    
+    #feedback-h2 {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        min-width: 43.8125rem;
+        text-align: end;
+        margin-bottom: 1.56rem;
+    }
+    
+    #feedback-p {
+        color: #FFF;
+        text-align: right;
+        text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 2.7rem;
+        min-height: 10rem;
+        width: 43.8125rem;
+    }
+    
+    form {
+        min-width: 43.8125rem;
+        margin-bottom: 42.45rem;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        border-radius: 5rem;
+    }
+    
+    input {
+        flex-grow: 2;
+        border: none;
+        width: 43.375rem;
+        font-size: 1.3rem;
+        border-radius: 3rem;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    
+    button {
+        border-radius: 6px;
+        border: none;
+        background: white;
+        top: 2px;
+        height: 90%;
+        aspect-ratio: 1;
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+    }
+    
+    button>img {
+        width: 1.7rem;
+        background: none;
+        border: none;
+    }
+    
+    #feedback-input {
+        min-height: 1.875rem;
+        padding: 0.1875rem 3.5rem 0.1875rem 0.9375rem;
+        border: none;
+        outline: none;
+    }
+    
+    #feedback-input::placeholder {
+        color: var(--placeholder-color);
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* Pagina 2 */
+    #pg-dois {
+        min-height: 100vh;
+        padding: 9rem 7.5rem 7.31rem 8.44rem;
+        background-color: var(--background-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section-pg-dois {
+        min-height: 47.375rem;
+        width: 74.035rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1.94rem;
+        justify-content: center;
+    }
+    
+    #img-pg-dois {
+        width: 29.375rem;
+        height: 93%;
+    }
+
+    .text-pg-dois {
+        max-width: 100vw;
+    }
+    
+    .h2-pg-dois {
+        min-width: 38.125rem;
+        height: 4.8125rem;
+    }
+    
+    #p-pg {
+        width: 100%;
+        height: 7rem;
+    }
+    
+    .p-pg-dois {
+        width: 42.75rem;
+        height: 8.75rem;
+        margin-bottom: 3.38rem;
+    }
+}

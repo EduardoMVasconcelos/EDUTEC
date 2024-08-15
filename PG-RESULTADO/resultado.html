@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/Logo do site.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="../images/Logo do site.png">
+    <link rel="stylesheet" href="resultado.css">
     <link rel="stylesheet" href="../CSS/header.css">
-    <link rel="stylesheet" href="quiz.css">
-    <title>QUIZ</title>
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <a href="../PG-INICIAL/index.html"><img src="../images/Logo do site.png" alt="Logo do site" id="site-logo"></a>
+        <a href="../index.html"><img src="../images/Logo do site.png" alt="Logo do site" id="site-logo"></a>
 
         <div class="navs">
             <nav>
                 <div class="dropdown">
-                    <p>Conteudo</p>
+                    <p>Conteúdo</p>
                 </div>
 
                 <div class="menu">
@@ -42,14 +42,24 @@
     </header>
 
     <section class="pg">
-        <h1>Quiz</h1>
+        <div class="card">
+            <div class="text">
+                <h1>PARABÉNS!</h1>
+                <p id="resultado"></p>
+            </div>
 
-        <p id="p">Seja bem vindo ao nosso quiz</p>
+            <div class="img">
+                <img src="../images/trofeu.jpg" alt="imagem de trofeu" id="trofeu-img">
+            </div>
 
-        <button id="button-jogar">Jogar</button>
-
+            <div class="buttons">
+                <button id="reiniciar" class="button">REINICIAR</button>
+                <button id="inicio" class="button">INÍCIO</button>
+            </div>
+        </div>
     </section>
-    <script src="./quiz.js"></script>
+
+    <script src="./resultado.js"></script>
     <script src="../JS/dropdown.js"></script>
 </body>
 </html>
