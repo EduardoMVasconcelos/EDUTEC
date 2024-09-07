@@ -90,12 +90,12 @@ body::-webkit-scrollbar-track {
     }
 
     .text-pg-dois {
-        width: 31.75rem;
+        width: 30rem;
         height: 58rem;
     }
     
     .h2-pg-dois {
-        min-width: 100%;
+        max-width: 90%;
         height: 4.8125rem;
         margin-bottom: 3.38rem;
     }
@@ -110,7 +110,7 @@ body::-webkit-scrollbar-track {
     }
     
     .p-pg-dois {
-        width: 96%;
+        width: 90%;
         height: 8.75rem;
         margin-bottom: 3.38rem;
     }
@@ -137,16 +137,31 @@ body::-webkit-scrollbar-track {
         font-weight: 500;
         line-height: normal;
     }
+
+    .pg-title {
+        margin-top: 9rem;
+        margin-bottom: 50.2rem;
+    }
     
     .slider-container {
         display: flex;
-        overflow: auto;
+        overflow: hidden;
         width: calc(100% - 15rem);
+        height: 24rem;
         gap: 5rem;
         left: 8rem;
-        position: relative;
+        position: absolute;
         padding-right: 3rem;
         padding-bottom: 6.94rem;
+    }
+
+    .slider-inner {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 2rem;
+        pointer-events: none;
+        transition: 0s ease-in;        
     }
     
     .card .card-content {
@@ -188,6 +203,12 @@ body::-webkit-scrollbar-track {
         line-height: normal;
         display: flex;
         align-self: center;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none; 
     }
 
     #h2-cdv {
@@ -207,6 +228,12 @@ body::-webkit-scrollbar-track {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none; 
     }
     
     
@@ -219,7 +246,70 @@ body::-webkit-scrollbar-track {
         backdrop-filter: initial;
         padding-right: 6.06rem;
     }
+
+    .popup .overlay {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vw;
+        background: rgba(0,0,0,0.7);
+        z-index: 1;
+        display: none;
+    }
+
+    .popup .content {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        background: #FFF;
+        top: 380%;
+        left: 50%;
+        width: 44.9375rem;
+        height: 6.25rem;
+        z-index: 2;
+        padding: 2rem;
+        box-sizing: border-box;
+        display: none;
+    }
     
+    .popup .close-btn {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        background: #222;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 19px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .popup #popup-p {
+        color: #000;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .popup.active .overlay {
+        display: block;
+    }
+
+    .popup.active .content {
+        transition: all 800ms ease-in-out;
+        display: block;
+    }
+
     .feedback-text {
         width: 100vw;
         height: 100vh;
