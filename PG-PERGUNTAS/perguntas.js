@@ -2,19 +2,91 @@ const questions = [
     {
         question: "Qual é a principal função do esqueleto humano?",
         answers: [
-            {text: "Armazenamento de vitaminas essenciais", correct: true},
-            {text: "Armazenamento de vitaminas", correct: false},
-            {text: "Armazenamento de essenciais", correct: false},
-            {text: "Armazenamento de", correct: false}
+            { text: "Armazenamento de vitaminas essenciais", correct: true },
+            { text: "Proteção dos vasos Sanguíneos", correct: false },
+            { text: "Produção de energia para o corpo", correct: false },
+            { text: "Regulação da temperatura corporal", correct: false }
         ]
     },
     {
-        question: "Qual osso",
+        question: "Quais são os 3 tipos de músculos?",
         answers: [
-            {text: "femur", correct: false},
-            {text: "osso", correct: false},
-            {text: "mao", correct: true},
-            {text: "cranio", correct: false}
+            { text: "O músculos estriado esquelético, músculos não estriado cardíaco e músculos não estriado esquelético", correct: false },
+            { text: "O estriado esquelético, estriado cardíaco e não estriado", correct: true },
+            { text: "O músculos não estriado muscular, musculo estriado esquelético e músculo não estriatico cardíaco", correct: false },
+            { text: "Músculos não estriado esquelético, músculos estriatico muscular, músculos estriatico cardíaco", correct: false }
+        ]
+    },
+    {
+        question: "Qual o principal órgão do sistema nervoso?",
+        answers: [
+            { text: "Cérebro", correct: true },
+            { text: "Medula Espinhal", correct: false },
+            { text: "Nervos Periféricos", correct: false },
+            { text: "Gânglios Nervosos", correct: false }
+        ]
+    },
+    {
+        question: "Qual componente do sistema cardiovascular é responsável por transportar sangue rico em oxigênio do coração para os tecidos do corpo?",
+        answers: [
+            { text: "Átrios", correct: false },
+            { text: "Ventrículos", correct: false },
+            { text: "Capilares", correct: false },
+            { text: "Artérias", correct: true }
+        ]
+    },
+    {
+        question: "Qual estrutura do sistema respiratório conecta as cavidades nasal e oral à laringe, servindo como passagem comum para o ar e alimentos?",
+        answers: [
+            { text: "Traqueia", correct: false },
+            { text: "Laringe", correct: false },
+            { text: "Brônquios", correct: false },
+            { text: "Faringe", correct: true }
+        ]
+    },
+    {
+        question: "Qual órgão do sistema respiratório é responsável pela troca gasosa entre o ar inspirado e o sangue?",
+        answers: [
+            { text: "Laringe", correct: false },
+            { text: "Traqueia", correct: false },
+            { text: "Pulmões", correct: true },
+            { text: "Faringe", correct: false }
+        ]
+    },
+    {
+        question: "Qual é a principal função do intestino grosso no sistema digestório?",
+        answers: [
+            { text: "Digestão das proteínas", correct: false },
+            { text: "Absorção de água", correct: true },
+            { text: "Produção de suco gástrico", correct: false },
+            { text: "Digestão de carboidratos", correct: false }
+        ]
+    },
+    {
+        question: "Qual órgão é mencionado como uma glândula tanto endócrina quanto exócrina, sendo responsável pela produção de insulina e outros hormônios que regulam o nível de glicose no sangue, além de produzir líquidos digestivos para auxiliar na digestão dos alimentos?",
+        answers: [
+            { text: "Hipotálamo", correct: false },
+            { text: "Hipófise", correct: false },
+            { text: "Glândula tireoide", correct: false },
+            { text: "Pâncreas", correct: true }
+        ]
+    },
+    {
+        question: "Qual dos seguintes ossos é considerado curto?",
+        answers: [
+            { text: "Fêmur", correct: false },
+            { text: "Úmero", correct: false },
+            { text: "Costelas", correct: false },
+            { text: "Vértebras", correct: true }
+        ]
+    },
+    {
+        question: "Quais são as válvulas cardíacas responsáveis por controlar o fluxo sanguíneo unidirecional entre os átrios e ventrículos no coração?",
+        answers: [
+            { text: "Tricúspide e Pulmonar", correct: false },
+            { text: "Mitral e Aórtica", correct: false },
+            { text: "Aórtica e Tricúspide", correct: true },
+            { text: "Pulmonar e Mitral", correct: false }
         ]
     }
 ]
@@ -22,6 +94,17 @@ const questions = [
 let numeroPergunta = document.querySelector("#numero-pergunta")
 let numero = 1
 
+const contador = document.querySelector("#contador")
+let intervalo
+
+function cronometro() {
+    let value = parseFloat(contador.innerHTML)
+    intervalo = setInterval(() => {
+        value += 0.1
+
+        contador.innerHTML = value.toFixed(1)
+    }, 100)
+}
 
 const questionElement = document.querySelector("#p-pergunta")
 const answerButtons = document.querySelector(".alternativas")
@@ -34,7 +117,7 @@ numeroPergunta.innerHTML = `${numero}/10`
 function startQuiz() {
     currentQuestionIndex = 0
     score = 0
-    nextBtn.innerHTML = "Next"
+    nextBtn.innerHTML = "Próximo"
     showQuestion()
 }
 
@@ -60,7 +143,7 @@ function showQuestion() {
 
 function resetState() {
     nextBtn.style.display = "none"
-    while(answerButtons.firstChild) {
+    while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild)
     }
 }
@@ -72,7 +155,7 @@ function selectAnswer(e) {
         selectedBtn.classList.add("button-pergunta-certo")
         score++
         localStorage.setItem("score", score)
-    }else {
+    } else {
         selectedBtn.classList.add("button-pergunta-errado")
     }
     Array.from(answerButtons.children).forEach(button => {
@@ -87,19 +170,20 @@ function selectAnswer(e) {
 
 function handleNextButton() {
     currentQuestionIndex++
-    if(currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < questions.length) {
         showQuestion()
-    }else {
+    } else {
         window.location.href = "../PG-RESULTADO/resultado.html"
     }
 }
 
-nextBtn.addEventListener("click", ()=> {
-    if(currentQuestionIndex < questions.length) {
-       handleNextButton() 
-    }else {
+nextBtn.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
+        handleNextButton()
+    } else {
         startQuiz()
     }
 })
 
 startQuiz()
+cronometro()

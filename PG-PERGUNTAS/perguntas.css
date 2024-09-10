@@ -66,9 +66,13 @@
         font-weight: 500;
         line-height: normal;
     }
+
+    .contador span:not(:last-child)::after {
+        content: ":";
+    }
     
     .pergunta {
-        min-width: 47.125rem;
+        max-width: 47.125rem;
         min-height: 9.375rem;
         background: var(--pergunta-background);
         border-radius: 1.25rem;
@@ -83,7 +87,7 @@
         color: #FFF;
         text-align: center;
         font-family: Roboto;
-        font-size: 1.8125rem;
+        font-size: 1.7rem;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -131,10 +135,11 @@
         background: rgba(129, 125, 125, 0.50);
         color: #FFF;
         font-family: Roboto;
-        font-size: 1.6875rem;
+        font-size: 1.3rem;
         font-style: normal;
         font-weight: 500;
-        line-height: normal;
+        line-height: normal; 
+        cursor: pointer;
     }
 
     .button-pergunta:disabled {
@@ -195,8 +200,21 @@
         background: var(--carrosel-background-errado);
     }
 
+    .btnNext {
+        display: flex;
+        align-items: center;
+    }
+
     #next-btn {
-        margin-left: 23rem;
+        margin-left: 19rem;
         display: none;
+        width: 10rem;
+        height: 2rem;
+        border-radius: 8px;
+        border: none;
+        text-transform: uppercase;
+        background-color: rgba(129, 125, 125, 0.70);
+        color: #FFF;
+        cursor: pointer;
     }
 }
