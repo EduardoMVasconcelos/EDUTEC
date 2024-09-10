@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,13 @@
     <link rel="icon" href="../images/Logo do site.png">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="perguntas.css">
+    <script type="module" src="perguntas.js" defer></script>
     <title>QUIZ</title>
 </head>
+
 <body>
     <header>
         <a href="../index.html"><img src="../images/Logo do site.png" alt="Logo do site" id="site-logo"></a>
-
         <div class="navs">
             <nav>
                 <div class="dropdown">
@@ -40,7 +42,7 @@
             </nav>
         </div>
     </header>
-    
+
     <section class="pg">
         <div class="card">
             <div class="first-row">
@@ -53,27 +55,45 @@
                 <p id="p-pergunta">1) Qual é a principal função do esqueleto humano?</p>
             </div>
 
-            <div class="alternativas">
-                <div class="alternativa1">
-                    <button class="button-alternativa"><p class="p-button">A</p></button>
-                    <button class="button-pergunta" id="botao-um"><p class="p-alternativa">Armazenamento de vitaminas essenciais</p></button>
+            <div class="box">
+                <div class="alt">
+                    <button class="button-alternativa">
+                        <p class="p-button">A</p>
+                    </button>
+                    <button class="button-alternativa">
+                        <p class="p-button">B</p>
+                    </button>
+                    <button class="button-alternativa">
+                        <p class="p-button">C</p>
+                    </button>
+                    <button class="button-alternativa">
+                        <p class="p-button">D</p>
+                    </button>
                 </div>
 
-                <div class="alternativa2">
-                    <button class="button-alternativa"><p class="p-button">B</p></button>
-                    <button class="button-pergunta" id="botao-dois"><p class="p-alternativa">Proteção dos vasos Sanguíneos</p></button>
-                </div>
+                <div class="alternativas">
+                    <div class="alternativa1">
+                        <!-- <button class="button-alternativa"><p class="p-button">A</p></button> -->
+                        <!-- <button class="button-pergunta" id="botao-um"><p class="p-alternativa">Armazenamento de vitaminas essenciais</p></button> -->
+                    </div>
 
-                <div class="alternativa3">
-                    <button class="button-alternativa"><p class="p-button">C</p></button>
-                    <button class="button-pergunta" id="botao-tres"><p class="p-alternativa">Produção de energia para o corpo</p></button>
-                </div>
+                    <div class="alternativa2">
+                        <!-- <button class="button-alternativa"><p class="p-button">B</p></button> -->
+                        <!-- <button class="button-pergunta" id="botao-dois"><p class="p-alternativa">Proteção dos vasos Sanguíneos</p></button> -->
+                    </div>
 
-                <div class="alternativa4">
-                    <button class="button-alternativa"><p class="p-button">D</p></button>
-                    <button class="button-pergunta" id="botao-quatro"><p class="p-alternativa">Regulação da temperatura corporal</p></button>
+                    <div class="alternativa3">
+                        <!-- <button class="button-alternativa"><p class="p-button">C</p></button> -->
+                        <!-- <button class="button-pergunta" id="botao-tres"><p class="p-alternativa">Produção de energia para o corpo</p></button> -->
+                    </div>
+
+                    <div class="alternativa4">
+                        <!-- <button class="button-alternativa"><p class="p-button">D</p></button> -->
+                        <!-- <button class="button-pergunta" id="botao-quatro"><p class="p-alternativa">Regulação da temperatura corporal</p></button> -->
+                    </div>
                 </div>
             </div>
+            <button id="next-btn">Next</button>
         </div>
 
         <div class="carrosel">
@@ -88,9 +108,8 @@
             <p class="carrosel-span"></p>
             <p class="carrosel-span"></p>
         </div>
-        <a href="../PG-RESULTADO/resultado.html">Resultados</a>
     </section>
     <script src="../JS/dropdown.js"></script>
-    <script src="./perguntas.js"></script>
 </body>
+
 </html>
