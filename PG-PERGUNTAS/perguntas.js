@@ -113,6 +113,7 @@ const nextBtn = document.querySelector("#next-btn")
 let currentQuestionIndex = 0
 let score = 0
 numeroPergunta.innerHTML = `${numero}/10`
+let carroselCorrect
 
 function startQuiz() {
     currentQuestionIndex = 0
@@ -155,8 +156,10 @@ function selectAnswer(e) {
         selectedBtn.classList.add("button-pergunta-certo")
         score++
         localStorage.setItem("score", score)
+        carroselCorrect = true
     } else {
         selectedBtn.classList.add("button-pergunta-errado")
+        carroselCorrect = false
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
@@ -166,6 +169,7 @@ function selectAnswer(e) {
     })
     nextBtn.style.display = "block"
     console.log(numero)
+    carrosel()
 }
 
 function handleNextButton() {
@@ -184,6 +188,89 @@ nextBtn.addEventListener("click", () => {
         startQuiz()
     }
 })
+
+function carrosel() {
+    if(currentQuestionIndex == 0) {
+        let primeiroCarrosel = document.querySelector("#primeiro-carrosel")
+        if(carroselCorrect == true) {
+            primeiroCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            primeiroCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+    if(currentQuestionIndex == 1) {
+        let segundoCarrosel = document.querySelector("#segundo-carrosel")
+        if(carroselCorrect == true) {
+            segundoCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            segundoCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+    if(currentQuestionIndex == 2) {
+        let terceiroCarrosel = document.querySelector("#terceiro-carrosel")
+        if(carroselCorrect == true) {
+            terceiroCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            terceiroCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+    if(currentQuestionIndex == 3) {
+        let quartoCarrosel = document.querySelector("#quarto-carrosel")
+        if(carroselCorrect == true) {
+            quartoCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            quartoCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+    if(currentQuestionIndex == 4) {
+        let quintoCarrosel = document.querySelector("#quinto-carrosel")
+        if(carroselCorrect == true) {
+            quintoCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            quintoCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+    if(currentQuestionIndex == 5) {
+        let sextoCarrosel = document.querySelector("#sexto-carrosel")
+        if(carroselCorrect == true) {
+            sextoCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            sextoCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+    if(currentQuestionIndex == 6) {
+        let setimoCarrosel = document.querySelector("#setimo-carrosel")
+        if(carroselCorrect == true) {
+            setimoCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            setimoCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+    if(currentQuestionIndex == 7) {
+        let oitavoCarrosel = document.querySelector("#oitavo-carrosel")
+        if(carroselCorrect == true) {
+            oitavoCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            oitavoCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+    if(currentQuestionIndex == 8) {
+        let nonoCarrosel = document.querySelector("#nono-carrosel")
+        if(carroselCorrect == true) {
+            nonoCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            nonoCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+    if(currentQuestionIndex == 9) {
+        let decimoCarrosel = document.querySelector("#decimo-carrosel")
+        if(carroselCorrect == true) {
+            decimoCarrosel.classList.add("carrosel-span-certo")
+        }else {
+            decimoCarrosel.classList.add("carrosel-span-errado")
+        }
+    }
+}
 
 startQuiz()
 cronometro()
