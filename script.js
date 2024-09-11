@@ -52,6 +52,19 @@ function checkboundary() {
 checkboundary()
 
 // Feedback
-function togglePopup() {
-    document.getElementById("popup-1").classList.toggle("active")
-}
+
+const botaoEnviar = document.getElementById('btf');
+const alerta = document.getElementById('alerta');
+const pgFeedback = document.querySelector("#pg-feedback")
+
+botaoEnviar.addEventListener('click', function(event) {
+    event.preventDefault();
+    alerta.style.display = 'block';
+    pgFeedback.style.filter = 'blur(1.5rem)'
+    setTimeout(function() {
+        alerta.style.display = 'none';
+        pgFeedback.style.filter = 'blur(0)'
+    }, 2000); 
+    // 8000
+    document.getElementById('feedback-input').value = '';
+});

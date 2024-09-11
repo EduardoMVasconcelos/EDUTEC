@@ -311,6 +311,7 @@ body::-webkit-scrollbar-track {
     }
 
     .feedback-text {
+        position: relative;
         width: 100vw;
         height: 100vh;
         padding: 13.06rem 6.06rem 29rem 40.56rem;
@@ -393,6 +394,28 @@ body::-webkit-scrollbar-track {
     
     #feedback-input::placeholder {
         color: var(--placeholder-color);
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #alerta {
+        display: none; 
+        background-color:var(--branco);
+        padding-inline: 2.75rem;
+        padding-block: 1.7rem;
+        border-radius: 8px;
+        width: 44.9375rem;
+        height: 6.25rem;
+        margin: 20px auto; 
+        position: absolute; 
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        color: #000;
+        text-align: justify;
         font-family: Roboto;
         font-size: 1.3rem;
         font-style: normal;
