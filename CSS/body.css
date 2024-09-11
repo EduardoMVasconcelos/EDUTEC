@@ -16,36 +16,6 @@
     --placeholder-color: #848080;
 }
 
-/* @media screen and (min-width: 1440px) {
-    .pg {
-        padding-inline: 4.62rem 6.94rem;
-    }
-    
-    .box {
-        display: flex;
-        gap: 3.06rem;
-        margin-block: 3.62rem 3.88rem;
-    }
-    
-    .box-dois {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .div-box {
-        margin-top: 3rem;
-        margin-bottom: 7rem;
-    }
-    
-    ol {
-        margin-left: 1.3rem;
-    }
-    
-    .ul-text {
-        margin-left: 1.2rem;
-    }
-} */
-
 @media screen and (min-width: 1024px) {
     .pg {
         padding-inline: 4.62rem 6.94rem;

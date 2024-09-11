@@ -60,11 +60,10 @@ const pgFeedback = document.querySelector("#pg-feedback")
 botaoEnviar.addEventListener('click', function(event) {
     event.preventDefault();
     alerta.style.display = 'block';
-    pgFeedback.style.filter = 'blur(1.5rem)'
+    // pgFeedback.style.filter = 'blur(1.5rem)'
     setTimeout(function() {
         alerta.style.display = 'none';
-        pgFeedback.style.filter = 'blur(0)'
+        // pgFeedback.style.filter = 'blur(0)'
     }, 2000); 
-    // 8000
     document.getElementById('feedback-input').value = '';
 });

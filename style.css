@@ -245,6 +245,7 @@ body::-webkit-scrollbar-track {
         background-repeat: no-repeat;
         backdrop-filter: initial;
         padding-right: 6.06rem;
+        z-index: 0;
     }
 
     .popup .overlay {
@@ -312,7 +313,7 @@ body::-webkit-scrollbar-track {
 
     .feedback-text {
         position: relative;
-        width: 100vw;
+        width: 95vw;
         height: 100vh;
         padding: 13.06rem 6.06rem 29rem 40.56rem;
         display: flex;
@@ -409,11 +410,12 @@ body::-webkit-scrollbar-track {
         border-radius: 8px;
         width: 44.9375rem;
         height: 6.25rem;
-        margin: 20px auto; 
+        /* margin: 20px auto;  */
         position: absolute; 
         z-index: 1000;
         top: 50%;
-        left: 50%;
+        right: 30%;
+        left: 30%;
         color: #000;
         text-align: justify;
         font-family: Roboto;
@@ -421,6 +423,7 @@ body::-webkit-scrollbar-track {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        z-index: 1;
     }
 }
 

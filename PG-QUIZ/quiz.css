@@ -7,7 +7,11 @@
 @media screen and (min-width: 1024px) {
     .pg {
         min-height: calc(100vh - 7.1875rem);
-        background-image: url(../images/Quiz-bg.png);
+        /* background-image: url(../images/Quiz-bg.png); */
+        background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../images/Quiz-bg.png)
+        ;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
