@@ -94,16 +94,22 @@ const questions = [
 let numeroPergunta = document.querySelector("#numero-pergunta")
 let numero = 1
 
-const contador = document.querySelector("#contador")
+const contador = document.querySelector("#contador-segundos")
 let intervalo
+let min = 0
+const minuto = document.querySelector("#contador-minutos")
 
 function cronometro() {
     let value = parseFloat(contador.innerHTML)
     intervalo = setInterval(() => {
-        value += 0.1
-
+        value += 1
         contador.innerHTML = value.toFixed(1)
-    }, 100)
+        if (value > 59) {
+            value = 0
+            min++
+            minuto.innerHTML = `${min}`
+        }
+    }, 1000)
 }
 
 const questionElement = document.querySelector("#p-pergunta")
