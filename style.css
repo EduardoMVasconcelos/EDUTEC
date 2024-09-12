@@ -68,7 +68,7 @@ body::-webkit-scrollbar-track {
     /* Pagina 2 */
     #pg-dois {
         min-height: 100vh;
-        padding: 9rem 7.5rem 7.31rem 8.44rem;
+        padding: 9rem 7.5rem 7.31rem 8.4rem;
         background-color: var(--background-color);
         display: flex;
         align-items: center;

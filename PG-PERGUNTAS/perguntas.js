@@ -103,7 +103,7 @@ function cronometro() {
     let value = parseFloat(contador.innerHTML)
     intervalo = setInterval(() => {
         value += 1
-        contador.innerHTML = value.toFixed(1)
+        contador.innerHTML = value.toFixed(0)
         if (value > 59) {
             value = 0
             min++
