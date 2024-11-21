@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #4F1619;
+}
+
+.main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 7.1875rem);
+}
+
+.box {
+
+    width: 73.875rem;
+    height: 41.563rem;
+    margin-top: 7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.terceiro {
+    width: 24.625rem;
+    height: calc(100% - 11.688rem);
+    margin-top: 11.688rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+
+    background-color: #AB6868;
+    border-radius: 0 1.875rem 1.875rem 0;
+}
+
+.terceiro > p {
+    margin-bottom: 15rem;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.primeiro {
+    width: 24.625rem;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    background-color: #AB6868;
+    border-radius: 1.875rem 1.875rem 0 0;
+}
+
+.primeiro > p {
+    margin-bottom: 15rem;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.segundo {
+    width: 24.625rem;
+    height: calc(100% - 11.688rem);
+    margin-top: 11.688rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    background-color: #AB6868;
+    border-radius: 1.875rem 0 0 1.875rem;
+}
+
+.segundo > p {
+    margin-bottom: 15rem;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.img-trofeus {
+    width: 7.125rem;
+    height: 7.125rem;
+    margin-top: -8rem;
+}
+
+.box > .rank {
+    background-color: #45040C;
+    width: 32.813rem;
+    height: 20.625rem;
+    position: fixed;
+
+    border-radius: 1.875rem;
+
+    margin-top: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 2.5rem;
+
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFF;
+}
+
+.rank > p > span {
+    color: #CA8383;
+}
