@@ -1,0 +1,23 @@
+* {
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 1rem;
+}
+
+img {
+    width: 3rem;
+    height: 3rem;
+}

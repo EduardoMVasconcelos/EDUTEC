@@ -1,3 +1,14 @@
+function verifyToken() {
+    const token = localStorage.getItem("token")
+
+    if(!token) {
+        window.location.href = "./PG-LOGIN/login.html"
+        return
+    }
+}
+
+verifyToken()
+
 let slider = document.querySelector(".slider-container")
 let innerSlider = document.querySelector(".slider-inner")
 
