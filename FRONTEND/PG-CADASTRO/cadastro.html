@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+    <!-- Define a codificação do documento como UTF-8 para suporte a caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Define o viewport para ajustar o layout para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
-    <script src="./cadastro.js" defer></script>
+    <!-- Define o título da página como "Cadastro" -->
     <title>Cadastro</title>
+    <!-- Link para o arquivo CSS externo para estilizar a página -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <img src="../images/Logo do site.png" alt="">
-
-    <form action="">
-        <input type="text" placeholder="Apelido (até 9 letras)" id="name">
-
-        <input type="email" placeholder="E-mail" id="email">
-
-        <input type="password" placeholder="Senha" id="password">
-        <input type="password" placeholder="Confirme sua Senha" id="password-Confirmation">
-
-        <button>Cadastrar-se</button>
-    </form>
-
-    <p>Já fez seu cadastro? <a href="../PG-LOGIN/login.html">Login</a></p>
+    <!-- Container principal da tela de cadastro -->
+    <div class="login-container">
+        <!-- Título da seção de cadastro -->
+        <h2>Cadastro</h2>
+        <!-- Formulário de cadastro com o ID "registerForm" para identificar no JavaScript -->
+        <form id="registerForm">
+            <!-- Campo de entrada para o nome de usuário, com ID "registerUsername" -->
+            <input type="text" id="registerUsername" placeholder="Username" required>
+            <!-- Campo de entrada para a senha, com ID "registerPassword" -->
+            <input type="password" id="registerPassword" placeholder="Password" required>
+            <!-- Botão de envio do formulário com o texto "Cadastrar" -->
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <!-- Importa o arquivo JavaScript externo para adicionar funcionalidades ao formulário de cadastro -->
+    <script src="cadastro.js"></script>
 </body>
+
 </html>

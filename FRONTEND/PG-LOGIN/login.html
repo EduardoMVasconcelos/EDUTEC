@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+    <!-- Define a codificação do documento como UTF-8 para suportar caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Define o viewport para ajustar o layout para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <!-- Define o título da página como "Login" -->
     <title>Login</title>
+    <!-- Link para o arquivo CSS externo para estilizar a página -->
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
 </head>
+
 <body>
-    <img src="../images/Logo do site.png" alt="">
-
-    <form action="">
-        <input type="email" placeholder="E-mail">
-
-        <input type="password" placeholder="Senha">
-
-        <button>Entrar</button>
-    </form>
-
-    <p>Não fez login ainda? <a href="../PG-CADASTRO/cadastro.html">Registre-se</a></p>
+    <!-- Container principal da tela de login -->
+    <div class="login-container">
+        <!-- Título da seção de login -->
+        <h2>Login</h2>
+        <!-- Formulário de login com o ID "loginForm" para identificar no JavaScript -->
+        <form id="loginForm">
+            <!-- Campo de entrada para o nome de usuário, com ID "username" -->
+            <input type="text" id="username" placeholder="Username" required>
+            <!-- Campo de entrada para a senha, com ID "password" -->
+            <input type="password" id="password" placeholder="Password" required>
+            <!-- Botão de envio do formulário com o texto "Entrar" -->
+            <button type="submit">Entrar</button>
+        </form>
+        <!-- Link para redirecionar o usuário para a página de cadastro caso não tenha uma conta -->
+        <p>Não tem uma conta? <a href="../PG-CADASTRO/cadastro.html">Cadastre-se aqui</a></p>
+    </div>
+    <!-- Importa o arquivo JavaScript externo para adicionar funcionalidades ao formulário -->
 </body>
+
 </html>
