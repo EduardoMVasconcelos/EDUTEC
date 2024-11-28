@@ -9,26 +9,24 @@
     <!-- Define o título da página como "Cadastro" -->
     <title>Cadastro</title>
     <!-- Link para o arquivo CSS externo para estilizar a página -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js" defer></script>
 </head>
 
 <body>
-    <!-- Container principal da tela de cadastro -->
     <div class="login-container">
-        <!-- Título da seção de cadastro -->
-        <h2>Cadastro</h2>
-        <!-- Formulário de cadastro com o ID "registerForm" para identificar no JavaScript -->
+        <img src="../images/Logo.png" alt="">
         <form id="registerForm">
-            <!-- Campo de entrada para o nome de usuário, com ID "registerUsername" -->
-            <input type="text" id="registerUsername" placeholder="Username" required>
-            <!-- Campo de entrada para a senha, com ID "registerPassword" -->
-            <input type="password" id="registerPassword" placeholder="Password" required>
-            <!-- Botão de envio do formulário com o texto "Cadastrar" -->
+            
+            <input type="text" id="name" placeholder="Nome">
+            <input type="email" id="email" placeholder="E-mail">
+            <input type="password" id="password" placeholder="Senha">
+            <input type="password" id="password-confirmation" placeholder="Confirme a senha">
+
             <button type="submit">Cadastrar</button>
         </form>
+        <p>Já possui uma conta? <a href="../PG-LOGIN/login.html">Faça Login!</a></p>
     </div>
-    <!-- Importa o arquivo JavaScript externo para adicionar funcionalidades ao formulário de cadastro -->
-    <script src="cadastro.js"></script>
 </body>
 
 </html>
