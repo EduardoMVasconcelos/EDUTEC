@@ -368,7 +368,7 @@ body::-webkit-scrollbar-track {
         outline: none;
     }
     
-    button {
+    button.btf {
         border-radius: 6px;
         border: none;
         background: white;

@@ -1,5 +1,7 @@
 import { getName } from "../utils/get-name.js"
+import { logout } from "../utils/logout.js"
 const name = await getName()
+logout()
 
 let slider = document.querySelector(".slider-container")
 let innerSlider = document.querySelector(".slider-inner")

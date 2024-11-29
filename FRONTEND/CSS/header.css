@@ -169,5 +169,30 @@
         font-weight: 400;
         line-height: normal;
     }
+
+    #logout {
+        width: 2rem;
+        height: 3rem;
+    }
+
+    .user {
+        display: flex;
+        flex-direction: row;
+    }
+
+    button.logout {
+        border: none;
+        background: none;
+
+        text-decoration: none;
+        color: var(--branco);
+        background: none;
+        font-family: Roboto;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+    }
 }
 

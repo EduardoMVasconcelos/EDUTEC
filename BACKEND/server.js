@@ -10,6 +10,17 @@ const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, SECRET_KEY } = process.env
 app.use(cors())
 app.use(express.json())
 
+function authenticateToken(req, res, next) {
+    const token = req.headers["authorization"];
+    if (!token) return res.status(403).json({ message: "Token necessário" });
+
+    jwt.verify(token, SECRET_KEY, (err, user) => {
+        if (err) return res.status(403).json({ message: "Token inválido" });
+        req.user = user;  // O `req.user` agora deve conter `id` e `username`
+        next();
+    });
+}
+
 app.post("/register", (request, response) => {
     const user = request.body.user
 
@@ -92,12 +103,66 @@ app.get("/verify", (request, response) => {
 })
 
 app.get("/getname", (request, response) => {
-    const token = request.header.authorization
+    try {
+        // Corrige a obtenção do token
+        const authHeader = request.headers.authorization;
 
-    const decoded = jwt.verify(token, SECRET_KEY)
+        if (!authHeader) {
+            return response.status(401).json({ error: "JWT token must be provided" });
+        }
 
-    response.json({ name: decoded.name })
-})
+        // Extrai o token do cabeçalho "Bearer <token>"
+        const token = authHeader.split(' ')[1];
+
+        if (!token) {
+            return response.status(401).json({ error: "Token missing from Authorization header" });
+        }
+
+        // Verifica o token
+        const decoded = jwt.verify(token, SECRET_KEY);
+
+        response.json({ name: decoded.name });
+    } catch (error) {
+        console.error(error);
+
+        if (error.name === 'JsonWebTokenError') {
+            return response.status(401).json({ error: "Invalid token" });
+        }
+
+        return response.status(500).json({ error: "Internal server error" });
+        // USEI CHATGPT MESMO, NÃO CONSEGUI ACHAR O Error, PERDOA MARCIO E BENONE   S
+    }
+}); 
+
+app.post("/save-score", authenticateToken, (req, res) => {
+    const { score } = req.body;
+    const userId = req.user.id;
+
+    db.query("INSERT INTO scores (user_id, score) VALUES (?, ?)", [userId, score], (err) => {
+        if (err) {
+            console.error("Erro ao salvar pontuação:", err);  // Log do erro para diagnóstico
+            return res.status(500).json({ message: "Erro ao salvar pontuação!" });
+        }
+        res.status(200).json({ message: "Pontuação salva com sucesso!" });
+    });
+});
+
+app.get("/api/ranking", authenticateToken, (req, res) => {
+    const query = `
+        SELECT users.username, scores.score
+        FROM scores
+        JOIN users ON scores.user_id = users.id
+        ORDER BY scores.score DESC;
+    `;
+
+    db.query(query, (err, results) => {
+        if (err) {
+            console.error("Erro ao buscar o ranking:", err);
+            return res.status(500).json({ message: "Erro ao buscar o ranking" });
+        }
+        res.status(200).json(results);
+    });
+});
 
 app.listen(3000, () => {
     console.log("Servidor rodando na porta 3000")
